@@ -18,11 +18,15 @@ public class Ejercicio1 extends GraphicsProgram{
 		int numLadrillosBase = 14;
 		int anchoLadrillo = 30;
 		int altoLadrillo = 12;
+
+		int altoPiramide = numLadrillosBase * altoLadrillo;
+		int basePiramide = numLadrillosBase * anchoLadrillo;
 		//querido yo del martes te falta girar la piramide 
 		for (int j=0;  j< numLadrillosBase; j++){
 			for (int i=0; i< numLadrillosBase-j; i++){
 				GRect ladrillo = new GRect (anchoLadrillo, altoLadrillo);
 				add(ladrillo, anchoLadrillo * j/2 + anchoLadrillo * i, altoLadrillo*j); 
+				add(ladrillo, 
 
 			}
 		}
